@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}title{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/title.png' %}" type="image/png">
+</head>
+<style>
+    body{
+        background-image: url("{% static 'images/bg.jpg' %}");
+        background-size: cover;
+    }
+    .box{
+        padding: 30px;
+        margin-left: 200px; 
+        margin-right: 200px; 
+        background-color: lightsalmon; 
+        border-radius: 5px;
+    }
+    header{
+        margin-left: 200px;  
+    }
+    .credits{ 
+        position: absolute; 
+        padding: 10px 10px 10px 10px; 
+        margin-top: 10px;
+        top: 0; 
+        width: 98%;
+        }
+    footer{ 
+        position: relative; 
+        padding: 10px 10px 60px 10px; 
+        bottom: 0; 
+        width: 98%; 
+        }
+    .smallbox{
+        padding: 30px;
+        margin-left: 350px; 
+        margin-right: 370px;
+        margin-top: 50px; 
+        background-color: rgb(241, 160, 127); 
+        border-radius: 5px;
+    }
+    {% block style %}
+    {% endblock %} 
+</style>
+<body>
+    <header>
+        <a href="/"><img src="{% static 'images/logo.png' %}" style="width: 200px; height: 200px; margin-left: 10px; margin-top: -10px;"></a>
+        <img src="{% static 'images/slogan.png' %}" style="width: 700px; height: 121px; margin-left: 10px; margin-top: -50px;">
+    </header>
+        {% block content %}
+            replace me
+        {% endblock %}
+    <div class="credits">
+        <p style="margin-right: 220px; text-align: right; color: khaki;">
+            <small>by</small>
+            <b>Nikhil Srivastav</b>
+        </p>
+    </div>
+    <footer></footer>
+</body>
+</html>

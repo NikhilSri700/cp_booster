@@ -1,0 +1,27 @@
+
+<style>
+table, th, td 
+{
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+<table style="width:90%; margin-left: auto; margin-right: auto;">
+    <tr>
+        <th>ID</th>
+        <th>Problem Name</th>
+        <th>Contest Name</th>
+        <th>Accuracy</th>
+    </tr>
+{% for instance in object_list %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td><a href="{{instance.link}}">{{instance.name}}</a></td>
+        <td>{{instance.contest}}</td>
+        <td>{{instance.accuracy}}</td>
+    </tr>
+{% endfor %}
+</table>
