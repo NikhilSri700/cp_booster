@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Type D {% endblock %}
+{% block content %}
+   <div class="box">
+      <p style="text-align: center; margin-right: 25px;"><b>Type D</b></p>
+        <p style="text-align: center;">Problems are sorted in decending order of accuracy they have at the time of contest i.e. from problem with maximum accuracy to problem with minimum accuracy.</p>
+   </div>
+   <div class="smallbox">
+      {% include 'query.html' %}
+   </div>
+{% endblock %}
