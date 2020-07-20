@@ -62,8 +62,6 @@ urlpatterns = [
     path('cook_off/division2/c/',vcook.div2C_view),
     path('cook_off/division2/d/',vcook.div2D_view),
     path('cook_off/division2/e/',vcook.div2E_view),
-    path('cook_off/division2/f/',vcook.div2F_view),
-    path('cook_off/division2/g/',vcook.div2G_view),
 
     path('lunch_time/', vlunch.lunch_time_view),
     path('lunch_time/division1', vlunch.lunch_div1_view),

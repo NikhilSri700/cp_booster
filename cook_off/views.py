@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from .models import *
 # Create your views here.
 def cook_off_view(request, *args, **kwargs):
     return render(request, 'cook_off/cook_off.html', {})

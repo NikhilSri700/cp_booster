@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from .models import *
 # Create your views here.
 def lunch_time_view(request, *args, **kwargs):
     return render(request, 'lunch_time/lunch_time.html', {})

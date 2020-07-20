@@ -85,16 +85,3 @@ class Div2E(models.Model):
     submissions = models.IntegerField(default=0)
     link        = models.TextField(default="")
 
-class Div2F(models.Model):
-    name        = models.TextField()
-    contest     = models.TextField()
-    accuracy    = models.DecimalField(max_digits=5, decimal_places=2)
-    submissions = models.IntegerField(default=0)
-    link        = models.TextField(default="")
-
-class Div2G(models.Model):
-    name        = models.TextField()
-    contest     = models.TextField()
-    accuracy    = models.DecimalField(max_digits=5, decimal_places=2)
-    submissions = models.IntegerField(default=0)
-    link        = models.TextField(default="")

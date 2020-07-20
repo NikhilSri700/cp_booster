@@ -14,6 +14,4 @@ admin.site.register(Div2B)
 admin.site.register(Div2C)
 admin.site.register(Div2D)
 admin.site.register(Div2E)
-admin.site.register(Div2F)
-admin.site.register(Div2G)
 
